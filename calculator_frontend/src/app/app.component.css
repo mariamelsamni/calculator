@@ -1,0 +1,72 @@
+
+.buttonD{
+    background-color: rgba(58, 58, 58, 0.944);
+    color: aliceblue;
+}
+.buttonL{
+    background-color: rgba(10, 4, 58, 0.944);
+    color: aliceblue;
+}
+.operation{
+    background-color: rgb(18, 10, 3);
+    color: aliceblue;
+    font-size: large;
+}
+.equal{
+    background-color: rgb(249, 255, 65);
+    color: rgb(7, 7, 8);
+    font-size: large;
+}
+.dot{
+    font-size:xx-large
+}
+
+button{
+    width: 111px;
+    height: 60px;
+    position:relative;
+    margin-bottom: 3px;
+    margin-left:5px ;
+    background-color:  rgb(193, 193, 196);
+    cursor: pointer;
+    
+   
+}
+.screen{
+    margin:auto;
+    width:450px;
+    height:100px;
+    background-color: rgb(240, 240, 211);
+    border:solid 4px;
+    border-radius: 3px;
+    padding: 1px;
+    overflow-x: auto;
+}
+.calculator{
+    border: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 470px;
+    height: 520px;
+    background-color: rgb(183, 236, 236);
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-left: 8px;
+
+}
+#complementary_screen{
+    font-family: 'Orbitron';
+    font-size:12pt;
+    margin-top: 2%;
+    margin-left: 75%;
+    /* overflow-x:auto */
+}
+#main_screen{
+    font-family: 'Orbitron';
+    font-size:28pt;
+    margin-top: 7px;
+    margin-left: 4%;
+    /* overflow-x: auto; */
+}
+
+

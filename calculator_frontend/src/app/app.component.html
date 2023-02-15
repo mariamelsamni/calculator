@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My first calculator</title>
+  <link rel="stylesheet" href="app.component.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="screen">
+      <p id="complementary_screen">{{expression}}</p>
+      <p id="main_screen">{{last}}</p>
+      <!-- <input type="text" name="Data" placeholder="0" id="datashow" value={{last}}> -->
+      
+    </div>
+    
+    <div class="calculator_keys">
+      <br>
+      <button class="buttonL" id="btn" [disabled]="is_disabled" type="button" (click)="eval('percentage')">%</button>
+      <button class="buttonL" (click)="clear()">CE</button>
+      <button class="buttonL" (click)="clear()">C</button>
+      <button class="buttonD" [disabled]="is_disabled" (click)="del()">DEL</button>
+      <br>
+      <button class="buttonL" [disabled]="is_disabled" id="btn" [disabled]="is_disabled" (click)="eval('reciprocal')">1/X</button>
+      <button class="buttonL" [disabled]="is_disabled" id="btn" [disabled]="is_disabled" (click)="eval('square')">X²</button>
+      <button class="buttonL" [disabled]="is_disabled" id="btn" [disabled]="is_disabled" (click)="eval('square_root')">²√x</button>
+      <button class="operation" id="btn" [disabled]="is_disabled" (click)="arithmetic('divide','÷')">÷</button>
+      <br>
+      <button class="button" [disabled]="is_disabled"  (click)="no('7')">7</button>
+      <button class="button"  [disabled]="is_disabled" (click)="no('8')">8</button>
+      <button class="button"  [disabled]="is_disabled" (click)="no('9')">9</button>
+      <button class="operation" [disabled]="is_disabled"  id="btn" (click)="arithmetic('multiply','x')">x</button>
+      <br>
+      <button class="button"  [disabled]="is_disabled" (click)="no('4')">4</button>
+      <button class="button" [disabled]="is_disabled"  (click)="no('5')">5</button>
+      <button class="button"  [disabled]="is_disabled" (click)="no('6')">6</button>
+      <button class="operation" id="btn" [disabled]="is_disabled" (click)="arithmetic('subtract','-')">-</button>
+      <br>
+      <button class="button"  [disabled]="is_disabled" (click)="no('1')">1</button>
+      <button class="button"  [disabled]="is_disabled" (click)="no('2')">2</button>
+      <button class="button"  [disabled]="is_disabled" (click)="no('3')">3</button>
+      <button class="operation" id="btn" [disabled]="is_disabled" (click)="arithmetic('add','+')">+</button>
+      <br>
+      <button class="button" id="btn" [disabled]="is_disabled" (click)="eval('negatiate')">+/-</button>
+      <button class="button"  [disabled]="is_disabled" (click)="no('0')">0</button>
+      <button class="button" id="btn" [disabled]="is_disabled" (click)="no('.')">.</button>
+      <button class="equal"  [disabled]="is_disabled" (click)="eval('evaluate')">=</button>
+          
+    </div>
+  </div>
+</body>
+</html>
